@@ -4,7 +4,7 @@ A simple rule-based chatbot trained using PyTorch. It parses predefined intents 
 
 ---
 
-## 🧠 Features
+## Features
 
 - Intent classification via feedforward neural network (PyTorch).
 - Text preprocessing with NLTK (tokenization + lemmatization).
@@ -14,7 +14,7 @@ A simple rule-based chatbot trained using PyTorch. It parses predefined intents 
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone this repo and navigate to the project:
 ```bash
@@ -28,11 +28,6 @@ python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-### 3. Install required packages:
-```bash
-pip install -r requirements.txt
-```
-
 ### 4. Download necessary NLTK resources:
 ```python
 import nltk
@@ -42,39 +37,7 @@ nltk.download('wordnet')
 
 ---
 
-## 📁 Project Structure
-
-```
-├── main.py                  # Main chatbot logic
-├── intents.json             # Training data (user intents and responses)
-├── chatbot_model.pth        # Trained model weights
-├── dimensions.json          # Model input/output shape metadata
-├── requirements.txt         # Dependencies
-└── README.md                # Project info
-```
-
----
-
-## 🏁 Training the Model
-
-Uncomment the training block in `main.py`:
-
-```python
-# assistant = ChatbotAssistant(...)
-# assistant.parse_intents()
-# assistant.prepare_data()
-# assistant.train_model(batch_size=8, lr=0.001, epochs=100)
-# assistant.save_model(...)
-```
-
-Then run:
-```bash
-python main.py
-```
-
----
-
-## 💬 Running the Chatbot
+## Running the Chatbot
 
 Comment out the training code and uncomment the inference block:
 
@@ -93,7 +56,7 @@ Use `/quit` to exit the loop.
 
 ---
 
-## 📌 Example `intents.json`
+## Example `intents.json`
 
 ```json
 {
@@ -114,16 +77,10 @@ Use `/quit` to exit the loop.
 
 ---
 
-## 🔗 Dependencies
+## Dependencies
 
 - `torch`
 - `nltk`
 - `numpy`
 
-All are listed in `requirements.txt`.
-
 ---
-
-## 📄 License
-
-MIT License. Use freely for learning and educational projects.
